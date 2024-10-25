@@ -11,6 +11,8 @@ CREATE TABLE Books (
     title VARCHAR(130) NOT NULL,
     author_id INT,
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+    price DOUBLE
+    publication_date DATE
 );
 
 CREATE TABLE Customers (
