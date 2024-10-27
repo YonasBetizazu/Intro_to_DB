@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 CREATE DATABASE IF NOT alx_book_store;
+=======
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+>>>>>>> 6d9042d87bd85c250c9757a8070561fa93b7b8b0
 USE alx_book_store;
 
 CREATE TABLE Authors (
@@ -11,6 +15,8 @@ CREATE TABLE Books (
     title VARCHAR(130) NOT NULL,
     author_id INT,
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
+    price DOUBLE
+    publication_date DATE
 );
 
 CREATE TABLE Customers (
